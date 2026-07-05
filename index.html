@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured™ Clarity in structure. Confidence in understanding.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0A0A0A',
+                        'secondary': '#666666',
+                        'accent': '#0046FF',
+                        'light': '#F7F9FC',
+                        'border': '#E5E7EB',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #FFFFFF;
+            color: #0A0A0A;
+        }
+        .tracking-tighter-custom {
+            letter-spacing: -0.04em;
+        }
+        .border-fade {
+            border-color: #E5E7EB;
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .page.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav-link.active {
+            color: #0A0A0A;
+        }
+        .nav-link.active::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #0046FF;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-fade">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="#" data-page="home" class="text-xl font-semibold tracking-tighter-custom text-primary page-link">Structured™</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#" data-page="platform" class="nav-link page-link text-sm font-medium text-secondary hover:text-primary transition-colors">Platform</a>
+                    <a href="#" data-page="research" class="nav-link page-link text-sm font-medium text-secondary hover:text-primary transition-colors">Research</a>
+                    <a href="#" data-page="company" class="nav-link page-link text-sm font-medium text-secondary hover:text-primary transition-colors">Company</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="hidden md:inline-block text-sm font-medium text-primary hover:text-accent transition-colors mr-6">Sign in</a>
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-2.5 border border-primary text-sm font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white transition-colors duration-300">Request Access</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HOME PAGE -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <header class="pt-32 pb-24 lg:pt-48 lg:pb-32">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7">
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tighter-custom text-balance">
+                            Clarity in structure.<br>
+                            <span class="text-accent">Confidence</span> in understanding.
+                        </h1>
+                        <p class="mt-8 text-lg md:text-xl text-secondary leading-relaxed max-w-xl font-light">
+                            Structured™ is focused on the understanding, evaluation, and application of structure within generative search and digital information.
+                        </p>
+                        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                            <a href="#" data-page="platform" class="page-link inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-sm font-medium rounded-md hover:bg-accent transition-colors duration-300">Explore the System</a>
+                            <a href="#" data-page="research" class="page-link inline-flex items-center justify-center px-8 py-4 border border-primary text-primary text-sm font-medium rounded-md hover:bg-light transition-colors duration-300">Read Documentation</a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 hidden lg:block">
+                        <div class="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Abstract structured data visualization" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Philosophy Section -->
+            <section class="py-24 lg:py-32 border-t border-fade bg-light">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8">
+                        <div class="lg:col-span-1">
+                            <h2 class="text-sm font-semibold uppercase tracking-widest text-accent">Principles</h2>
+                        </div>
+                        <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-12">
+                            <div>
+                                <h3 class="text-xl font-medium mb-4 tracking-tight">Understanding</h3>
+                                <p class="text-secondary leading-relaxed text-[15px]">Deep comprehension of generative systems and the foundational architecture of digital information.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium mb-4 tracking-tight">Evaluation</h3>
+                                <p class="text-secondary leading-relaxed text-[15px]">Precision in assessing information architectures to ensure scalable, long-term system integrity.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium mb-4 tracking-tight">Application</h3>
+                                <p class="text-secondary leading-relaxed text-[15px]">Building timeless, system-oriented solutions that prioritize clarity and confident decision making.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Visual Showcase -->
+            <section class="py-24 lg:py-32">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                        <div class="order-2 lg:order-1">
+                            <h2 class="text-4xl lg:text-5xl font-semibold tracking-tighter-custom leading-tight mb-6">
+                                A refined palette of deep neutrals and modern blues.
+                            </h2>
+                            <p class="text-lg text-secondary font-light leading-relaxed mb-10">
+                                Our interface is built on a strong grid and spacing system. It emphasizes clear visual hierarchy and purposeful white space to create an elegant visual rhythm.
+                            </p>
+                            <dl class="space-y-6 border-l border-fade pl-8">
+                                <div>
+                                    <dt class="text-sm font-mono text-accent mb-1">01. Typography</dt>
+                                    <dd class="text-secondary text-[15px]">Exceptional, system-driven type scaling for intelligently minimal reading.</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-mono text-accent mb-1">02. Layout</dt>
+                                    <dd class="text-secondary text-[15px]">Purposeful spacing systems that reinforce clarity and structure.</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-mono text-accent mb-1">03. Color</dt>
+                                    <dd class="text-secondary text-[15px]">Deep neutrals paired with modern blues to communicate confidence.</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <div class="relative rounded-xl overflow-hidden border border-fade shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Structured dashboard interface" class="w-full h-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PLATFORM PAGE -->
+        <div id="platform" class="page">
+            <header class="pt-32 pb-16 lg:pt-40 lg:pb-20 border-b border-fade">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="max-w-3xl">
+                        <p class="text-sm font-semibold uppercase tracking-widest text-accent mb-6">The Platform</p>
+                        <h1 class="text-5xl lg:text-6xl font-semibold tracking-tighter-custom leading-[1.05] text-balance">
+                            The architecture of generative search.
+                        </h1>
+                        <p class="mt-8 text-xl text-secondary leading-relaxed font-light">
+                            A system built for evaluating digital information at scale. We provide the tools to understand and apply structure to complex data environments.
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="py-24 lg:py-32">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                        <div class="lg:col-span-7">
+                            <div class="relative aspect-[16/10] rounded-lg overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Platform interface" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5">
+                            <h2 class="text-3xl lg:text-4xl font-semibold tracking-tighter-custom mb-6">Core Capabilities</h2>
+                            <p class="text-secondary font-light leading-relaxed mb-8">
+                                Our platform is designed with a system-oriented approach, ensuring every interaction is precise, confident, and purposeful.
+                            </p>
+                            <ul class="space-y-8">
+                                <li class="flex gap-4">
+                                    <span class="text-accent font-mono text-sm mt-1">01</span>
+                                    <div>
+                                        <h3 class="text-lg font-medium mb-2">Structural Mapping</h3>
+                                        <p class="text-secondary text-[15px] leading-relaxed">Visualize data relationships and information architecture with precision.</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="text-accent font-mono text-sm mt-1">02</span>
+                                    <div>
+                                        <h3 class="text-lg font-medium mb-2">Generative Evaluation</h3>
+                                        <p class="text-secondary text-[15px] leading-relaxed">Assess system integrity and output quality through intelligent metrics.</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="text-accent font-mono text-sm mt-1">03</span>
+                                    <div>
+                                        <h3 class="text-lg font-medium mb-2">Confidence Scoring</h3>
+                                        <p class="text-secondary text-[15px] leading-relaxed">Implement long-term thinking with scalable, reliable data confidence models.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-light border-y border-fade">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                        <div>
+                            <p class="text-5xl font-semibold tracking-tighter-custom text-accent mb-2">99.9%</p>
+                            <p class="text-secondary text-sm">System Uptime</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl font-semibold tracking-tighter-custom text-accent mb-2">10ms</p>
+                            <p class="text-secondary text-sm">Average Processing Latency</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl font-semibold tracking-tighter-custom text-accent mb-2">1M+</p>
+                            <p class="text-secondary text-sm">Data Structures Mapped</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- RESEARCH PAGE -->
+        <div id="research" class="page">
+            <header class="pt-32 pb-16 lg:pt-40 lg:pb-20 border-b border-fade">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="max-w-3xl">
+                        <p class="text-sm font-semibold uppercase tracking-widest text-accent mb-6">Research & Insights</p>
+                        <h1 class="text-5xl lg:text-6xl font-semibold tracking-tighter-custom leading-[1.05] text-balance">
+                            Understanding through structure.
+                        </h1>
+                        <p class="mt-8 text-xl text-secondary leading-relaxed font-light">
+                            Exploring the depths of generative systems, digital information, and the frameworks that shape the future of technology.
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="py-24 lg:py-32">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
+                        
+                        <article class="group cursor-pointer">
+                            <div class="aspect-[4/3] rounded-lg overflow-hidden mb-6 bg-light">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Research Paper 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <p class="text-xs font-mono text-accent uppercase tracking-widest mb-3">Generative Search</p>
+                            <h3 class="text-xl font-medium tracking-tight mb-3 group-hover:text-accent transition-colors">The architecture of generative search.</h3>
+                            <p class="text-secondary text-[15px] leading-relaxed">An in-depth analysis of how structure dictates the efficiency and accuracy of generative models.</p>
+                        </article>
+
+                        <article class="group cursor-pointer">
+                            <div class="aspect-[4/3] rounded-lg overflow-hidden mb-6 bg-light">
+                                <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Research Paper 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <p class="text-xs font-mono text-accent uppercase tracking-widest mb-3">Digital Information</p>
+                            <h3 class="text-xl font-medium tracking-tight mb-3 group-hover:text-accent transition-colors">Evaluating information integrity.</h3>
+                            <p class="text-secondary text-[15px] leading-relaxed">Establishing frameworks for confidence scoring and long-term system thinking in data architecture.</p>
+                        </article>
+
+                        <article class="group cursor-pointer">
+                            <div class="aspect-[4/3] rounded-lg overflow-hidden mb-6 bg-light">
+                                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Research Paper 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <p class="text-xs font-mono text-accent uppercase tracking-widest mb-3">System Design</p>
+                            <h3 class="text-xl font-medium tracking-tight mb-3 group-hover:text-accent transition-colors">A framework for digital architecture.</h3>
+                            <p class="text-secondary text-[15px] leading-relaxed">Defining the principles of intelligently minimal design in complex data environments.</p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- COMPANY PAGE -->
+        <div id="company" class="page">
+            <header class="pt-32 pb-16 lg:pt-40 lg:pb-20 border-b border-fade">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="max-w-3xl">
+                        <p class="text-sm font-semibold uppercase tracking-widest text-accent mb-6">Our Company</p>
+                        <h1 class="text-5xl lg:text-6xl font-semibold tracking-tighter-custom leading-[1.05] text-balance">
+                            Building for the long term.
+                        </h1>
+                        <p class="mt-8 text-xl text-secondary leading-relaxed font-light">
+                            Structured™ is not simply another technology company. We are establishing an identity around the understanding, evaluation, and application of structure.
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="py-24 lg:py-32">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                        <div>
+                            <h2 class="text-3xl lg:text-4xl font-semibold tracking-tighter-custom mb-8">Our Mission</h2>
+                            <div class="space-y-6 text-secondary font-light leading-relaxed text-lg">
+                                <p>
+                                    We are focused on creating a visual identity and technological foundation that feels authentic to Structured™. Our approach is thoughtful rather than reliant on visual excess.
+                                </p>
+                                <p>
+                                    We believe in modern, premium, and timeless design. Our solutions are system-oriented, typography-driven, and intelligently minimal. Every decision reinforces clarity, structure, and understanding.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative aspect-[4/5] rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Company workspace" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-light border-t border-fade">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                    <h2 class="text-3xl lg:text-4xl font-semibold tracking-tighter-custom mb-6">Ready to build the future?</h2>
+                    <p class="text-secondary text-lg font-light mb-10 max-w-xl mx-auto">Join us in establishing a visual language that is synonymous with clarity and confidence.</p>
+                    <a href="#" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-sm font-medium rounded-md hover:bg-accent transition-colors duration-300">Request Access</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-semibold tracking-tighter-custom">Structured™</h3>
+                    <p class="text-sm text-white/60 mt-2 font-light">Clarity in structure. Confidence in understanding.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 md:gap-12">
+                    <div class="flex flex-col gap-3">
+                        <span class="text-xs uppercase tracking-widest text-white/40">Navigation</span>
+                        <a href="#" data-page="platform" class="page-link text-sm text-white/80 hover:text-white transition-colors">Platform</a>
+                        <a href="#" data-page="research" class="page-link text-sm text-white/80 hover:text-white transition-colors">Research</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <span class="text-xs uppercase tracking-widest text-white/40">Company</span>
+                        <a href="#" data-page="company" class="page-link text-sm text-white/80 hover:text-white transition-colors">About</a>
+                        <a href="#" class="text-sm text-white/80 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                <p>© 2026 Structured™. All rights reserved. Design By Al Mahmud</p>
+                <p class="mt-4 md:mt-0">Designed with intentional precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.page-link');
+            const pages = document.querySelectorAll('.page');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            function navigateTo(pageId) {
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
+                document.getElementById(pageId).classList.add('active');
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.dataset.page === pageId) {
+                        link.classList.add('active');
+                    }
+                });
+
+                window.scrollTo({ top: 0, behavior: 'instant' });
+            }
+
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const pageId = this.dataset.page;
+                    if (pageId) {
+                        navigateTo(pageId);
+                    }
+                });
+            });
+
+            // Set initial active state based on home
+            navigateTo('home');
+        });
+    </script>
+</body>
+</html>
